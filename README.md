@@ -4,16 +4,20 @@ It based on HBase thrift, but not the new thrift interface in HBase 0.94+ versio
 
 ## Prerequisites:
 * Download, decompress and install [thrift-0.8.0](https://dist.apache.org/repos/dist/release/thrift/0.8.0/thrift-0.8.0.tar.gz).
-** `wget https://dist.apache.org/repos/dist/release/thrift/0.8.0/thrift-0.8.0.tar.gz`
-** `tar zxvf thrift-0.8.0.tar.gz`
-** `sudo yum install automake libtool flex bison pkgconfig gcc-c++ boost-devel libevent-devel zlib-devel python-devel ruby-devel`
-** `cd thrift-0.8.0`
-** `./configure`
-** `make`
-** `sudo make install`
+<pre>
+wget https://dist.apache.org/repos/dist/release/thrift/0.8.0/thrift-0.8.0.tar.gz
+tar zxvf thrift-0.8.0.tar.gz
+sudo yum install automake libtool flex bison pkgconfig gcc-c++ boost-devel libevent-devel zlib-devel python-devel ruby-devel
+cd thrift-0.8.0
+./configure
+make
+sudo make install
+</pre>
 * Download and decompress [hbase-0.92.1](http://www.fayea.com/apache-mirror/hbase/hbase-0.92.1/hbase-0.92.1.tar.gz) or previous versions.
-** `wget http://www.fayea.com/apache-mirror/hbase/hbase-0.92.1/hbase-0.92.1.tar.gz`
-** `tar zxvf hbase-0.92.1.tar.gz`
+<pre>
+wget http://www.fayea.com/apache-mirror/hbase/hbase-0.92.1/hbase-0.92.1.tar.gz
+tar zxvf hbase-0.92.1.tar.gz
+</pre>
 
 ## Instructions:
 * Run Thrift to generate the cpp module HBase:
