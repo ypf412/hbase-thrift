@@ -12,6 +12,8 @@
 #      make perf
 #   3. Execute the binary program:
 #      ./demo <host> <port>
+#      ./testput host port key_len val_len list_num
+#      ./testget host port key_len val_len list_num block_cache_flag
 
 THRIFT_DIR = /usr/local/include/thrift
 
