@@ -31,9 +31,9 @@ make perf
 </pre>
 * Execute the binary program:
 <pre>
-./demo <host> <port>
-./testput <host> <port> <key_len> <val_len> <list_num>
-./testget <host> <port> <key_len> <val_len> <list_num> <block_cache_flag>
+./demo [host] [port]
+./testput [host] [port] [key_len] [val_len] [list_num]
+./testget [host] [port] [key_len] [val_len] [list_num] [block_cache_flag]
 </pre>
 
 ## Contributors
