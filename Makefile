@@ -9,7 +9,7 @@
 #      thrift --gen cpp [hbase-root]/src/main/resources/org/apache/hadoop/hbase/thrift/Hbase.thrift
 #   2. Make the project to generate binary program:
 #      make demo
-#      make perf
+#      make test
 #   3. Execute the binary program:
 #      ./demo <host> <port>
 #      ./testput <host> <port> <key_len> <val_len> <list_num>
