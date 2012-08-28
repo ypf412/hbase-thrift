@@ -22,15 +22,18 @@ tar zxvf hbase-0.92.1.tar.gz
 ## Instructions
 * Run Thrift to generate the cpp module HBase:
 <pre>
-thrift --gen cpp <hbase-root>/src/main/resources/org/apache/hadoop/hbase/thrift/Hbase.thrift
+thrift --gen cpp [hbase-root]/src/main/resources/org/apache/hadoop/hbase/thrift/Hbase.thrift
 </pre>
 * Make the project to generate binary program:
 <pre>
-make
+make demo
+make perf
 </pre>
 * Execute the binary program:
 <pre>
-./main <host> <port>
+./demo <host> <port>
+./testput <host> <port> <key_len> <val_len> <list_num>
+./testget <host> <port> <key_len> <val_len> <list_num> <block_cache_flag>
 </pre>
 
 ## Contributors
